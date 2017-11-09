@@ -6,16 +6,13 @@ namespace ConsoleAppArray
     {
         static void Main(string[] args)
         {
-            int[] data = new int[10];
-            data[1] = 0;
-            data[2] = 1;
-            data[3] = 9;
-            data[8] = 10;
-            
-           
-        Console.WriteLine("tatal = "+data[0]+ data[1] + data[2] + data[3] + data[4] + data[5] +
-            data[6] + data[7] + data[8] + data[9]);
-            
+            int[] data = { 51, 58, 14, 20, -5, 61, 7, 21, 6 };
+            Console.WriteLine("Length of data = {0}", data.Length);
+            for (int i = 0; i < data.Length; i++)
+            {
+                Console.WriteLine(data[i]);
+            }
+            Console.ReadLine();
         }
     }
 }
